@@ -40,11 +40,6 @@ This repository contains two main modules:
 - **`url-shortener-sb/`** - The Spring Boot backend.
 - **`url-shortener-react/`** - The React + Vite frontend.
 
-For a detailed breakdown of how the frontend and backend communicate, data flows, and project architecture, please check out the [Project Workflow Guide](PROJECT_WORKFLOW.md).
-
-## 🚀 Getting Started
-
-To run the project locally, please refer to the detailed instructions in the [Project Workflow Guide - How to Run the Project](PROJECT_WORKFLOW.md#🚀-how-to-run-the-project) section.
 
 You will need:
 - Java 17+
