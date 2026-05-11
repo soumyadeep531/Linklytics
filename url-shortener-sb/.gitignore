@@ -16,7 +16,7 @@ application-local.properties
 # Keep application.properties but NOT if it has real secrets
 # If your application.properties has DB passwords/JWT secrets,
 # add it below and use environment variables instead:
-# src/main/resources/application.properties
+src/main/resources/application.properties
 
 # ── IDE configs ──────────────────────────────────────────────
 
