@@ -1,0 +1,50 @@
+# ============================================================
+# ROOT-LEVEL .gitignore  (Linklytics / URL Shortener Project)
+# ============================================================
+
+# ── OS generated files ──────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ── Windows shortcuts / temp files ──────────────────────────
+*.lnk
+*.tmp
+*.temp
+
+# ── Archives (never commit zip/rar of source code) ──────────
+*.zip
+*.rar
+*.tar
+*.tar.gz
+*.7z
+
+# ── Auto-generated documentation / trackers ─────────────────
+*.docx
+*.xlsx
+*_todo_tracker.html
+*_Implementation_Guide.*
+PROJECT_WORKFLOW.md
+
+# ── IDE & editor configs ─────────────────────────────────────
+.idea/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.swp
+*.swo
+*~
+
+# ── Logs ────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── TestSprite auto-generated test scaffold ──────────────────
+testsprite_tests/

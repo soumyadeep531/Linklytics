@@ -1,0 +1,55 @@
+# ============================================================
+# FRONTEND .gitignore  (Vite + React)
+# ============================================================
+
+# ── Dependencies (always regenerated via npm install) ────────
+node_modules/
+
+# ── Build output ─────────────────────────────────────────────
+dist/
+dist-ssr/
+build/
+
+# ── Environment files (contain secrets / API keys) ───────────
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+.env.staging
+
+# ── Logs ────────────────────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ── Vite / tooling cache ──────────────────────────────────────
+.vite/
+*.local
+
+# ── TestSprite auto-generated test scaffold ──────────────────
+testsprite_tests/
+
+# ── IDE & editor configs ─────────────────────────────────────
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+
+# ── OS files ─────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Lock files (keep package-lock.json, ignore others) ───────
+yarn.lock
+pnpm-lock.yaml
