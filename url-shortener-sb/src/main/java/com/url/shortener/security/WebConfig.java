@@ -22,6 +22,7 @@ public class WebConfig implements WebMvcConfigurer {
         CorsConfiguration configuration = new CorsConfiguration();
         configuration.setAllowedOrigins(Arrays.asList(
                 frontEndUrl,
+                "https://linkytycs.netlify.app",
                 "https://cosmic-melba-e69368.netlify.app",
                 "http://localhost:5173",
                 "http://localhost:5174"
