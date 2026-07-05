@@ -2,6 +2,7 @@ package com.url.shortener.controller;
 
 import com.url.shortener.models.UrlMapping;
 import com.url.shortener.service.UrlMappingService;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,6 +12,9 @@ import jakarta.servlet.http.HttpServletRequest;
 
 @RestController
 public class RedirectController {
+
+    @Value("${frontend.url}")
+    private String frontendUrl;
 
     private final UrlMappingService urlMappingService;
 
@@ -32,7 +36,7 @@ public class RedirectController {
         } catch (RuntimeException e) {
             if ("LINK_EXPIRED".equals(e.getMessage())) {
                 HttpHeaders httpHeaders = new HttpHeaders();
-                httpHeaders.add("Location", "http://localhost:5173/error?reason=expired");
+                httpHeaders.add("Location", frontendUrl + "error?reason=expired");
                 return ResponseEntity.status(302).headers(httpHeaders).build();
             }
             throw e;
